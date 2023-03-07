@@ -49,16 +49,6 @@ def Teadmiste_kontroll(rus:list,est:list):
         hinne="Väga halb!"
     return hinne
 
-def load_dict(file_name):
-    words1 = []
-    words2 = []
-    with open(file_name, 'r') as file:
-        for line in file:
-            word1, word2 = line.strip().split(':')
-            words1.append(word1)
-            words2.append(word2)
-    return words1, words2
-
 
 def est_to_rus(word, est_words, rus_words):
     try:

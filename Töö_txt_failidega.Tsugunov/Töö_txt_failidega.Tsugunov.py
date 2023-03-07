@@ -1,5 +1,5 @@
 from module1 import *
-laused=["Tere tulemast"] #
+laused=["Tere tulemast"] #bbb
 text_est = Loe_failist('est.txt')
 text_rus = Loe_failist('rus.txt')
 while True:
@@ -29,7 +29,7 @@ while True:
             print(f"Слово {est_word} не найдено в словаре.")
 
     elif v==5:
-        rus_words, est_words = load_dict("rus-est.txt")
+        rus_words, est_words = ("rus-est.txt")
         rus_word = input("Введите слово на русском: ")
         est_word = rus_to_est(rus_word, rus_words, est_words)
         if est_word is not None:
